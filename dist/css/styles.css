@@ -11,7 +11,7 @@ body {
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400, 600, 700;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
@@ -166,4 +166,51 @@ body {
   text-decoration: none !important;
   font-weight: bold;
   color: hsl(252, 100%, 67%) !important;
+}
+
+@media (max-width: 375px) {
+  .results-summary-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 0rem 0rem;
+  }
+  .results-summary-container .individual-result-container {
+    width: unset;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .results-summary-container .individual-result-container header .individual-result-container_title {
+    padding: 0rem;
+    margin-bottom: 1.6rem;
+  }
+  .results-summary-container .individual-result-container .score-container {
+    width: 20%;
+  }
+  .results-summary-container .generic-results-container {
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    right: 0;
+    bottom: 3%;
+    box-shadow: none;
+  }
+  .results-summary-container .generic-results-container h2 {
+    font-size: 0.95rem;
+    margin-top: 1.4rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .results-summary-container .generic-results-container_content {
+    padding: 0rem 3rem;
+  }
+  .results-summary-container .generic-results-container_content_element {
+    font-size: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+  .results-summary-container .generic-results-container .btn-container button {
+    width: 82%;
+  }
+  .footer-container {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
