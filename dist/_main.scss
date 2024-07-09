@@ -8,7 +8,10 @@
     margin: auto;
 
     .individual-result-container {
-        padding: 0rem 2.8rem;
+        position: relative;
+        z-index: 1;
+        width: 20rem;
+        height: 56vh;
         border-radius: 1.05rem;
         background: linear-gradient(to bottom, $light-slate-blue-background, $light-royal-blue-background);
         
@@ -26,9 +29,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom, $light-royal-blue-background, $persian-blue-circle);
+            background: linear-gradient(to bottom, $violet-blue-circle, $persian-blue-circle);
             border-radius: 50%;
-            width: 35%;
+            width: 25%;
             margin: auto;
             padding: 3rem;
             color: $white;
@@ -53,10 +56,102 @@
 
         .content {
             font-size: 0.7rem;
-            width: 80%;
+            width: 55%;
             margin: auto auto 2.5rem;
             color: $light-lavender;
             text-align: center;
         }
+    }
+
+    .generic-results-container {
+        position: relative;
+        right: 3%;
+        z-index: 2;
+        width: 20rem;
+        height: 56vh;
+        box-shadow: 17px 2px 20px 0px rgba(0, 0, 0, 0.158);
+        border-radius: 0.5rem;
+
+        h2 {
+            font-size: 1.3rem;
+            width: 100%;
+            color: $dark-gray-blue;
+            padding-left: 3rem;
+            padding-top: 1.25rem;
+            padding-bottom: 0.75rem;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 3.8rem;
+            padding-right: 2.8rem;
+
+            &_element {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                padding: 0.75rem;
+                font-size: 0.9rem;
+
+                .element-text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+
+
+            #reaction-element {
+                color: $light-red;
+                background-color: hsl(0, 100%, 67%, 0.11);
+            }
+
+            #memory-element {
+                color: $orangey-yellow;
+                background-color: hsl(39, 100%, 56%, 0.11);
+            }
+
+            #verbal-element {
+                color: $green-teal;
+                background-color: hsl(166, 100%, 37%, 0.11);
+            }
+
+            #visual-element {
+                color: $cobalt-blue;
+                background-color: hsl(234, 85%, 45%, 0.11);
+            }
+
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 0.9rem auto 2rem;
+
+            button {
+                width: 78%;
+                margin: auto;
+                padding: 0.75rem;
+                border-radius: 1rem;
+                border: none;   
+                font-weight: bold;
+                font-size: 0.9rem;
+                background-color: $dark-gray-blue;
+                color: $white;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: linear-gradient(to bottom, $light-slate-blue-background, $light-royal-blue-background);
+            }
+        }
+
     }
 }
