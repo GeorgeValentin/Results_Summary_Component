@@ -1,0 +1,19 @@
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: $light-lavender;
+    font-style: italic;
+
+    &_content {
+        font-size: 1rem;
+
+        a {
+            text-decoration: none !important;
+            font-weight: bold;
+            color: $light-slate-blue-background !important;
+        }
+    }
+}

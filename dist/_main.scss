@@ -1,0 +1,62 @@
+.results-summary-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 94%;
+    width: 40rem;
+    margin: auto;
+
+    .individual-result-container {
+        padding: 0rem 2.8rem;
+        border-radius: 1.05rem;
+        background: linear-gradient(to bottom, $light-slate-blue-background, $light-royal-blue-background);
+        
+        header {
+            .individual-result-container_title {
+                text-align: center;
+                font-size: 1.1rem;
+                margin: 2rem auto;
+                color: $light-lavender;
+            }
+        }
+
+        .score-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, $light-royal-blue-background, $persian-blue-circle);
+            border-radius: 50%;
+            width: 35%;
+            margin: auto;
+            padding: 3rem;
+            color: $white;
+
+            &_big {
+                font-size: 3rem;
+            }
+
+            &_small {
+                font-weight: 100 !important;
+                font-size: 0.8rem;
+                color: $light-lavender;
+            }
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 2rem;
+            color: $white;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            font-size: 0.7rem;
+            width: 80%;
+            margin: auto auto 2.5rem;
+            color: $light-lavender;
+            text-align: center;
+        }
+    }
+}
